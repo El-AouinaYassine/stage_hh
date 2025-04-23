@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 
 class GetController extends Controller
 {
-    //
     public function sayHello(){
         return response()->json(['message' => 'weh asbroder']);    }
 }
