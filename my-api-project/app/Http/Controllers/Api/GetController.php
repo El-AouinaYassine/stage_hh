@@ -11,3 +11,4 @@ class GetController extends Controller
         return response()->json(['message' => 'weh asbroder']);
     }
 }
+
