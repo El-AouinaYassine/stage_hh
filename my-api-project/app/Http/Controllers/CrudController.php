@@ -33,7 +33,9 @@ class CrudController extends Controller
         if($user == null){
             return response()->json(data:['msg'=>'user not found'],status:404);
         }else{
-            $user->delete();
+            $user->name=$request->name;
+            $user->email=$request->email;
+            $user->save();
             return response()->json(data:['msg'=>"user $user->name is deleted !!"],status:200);
         }
     }
